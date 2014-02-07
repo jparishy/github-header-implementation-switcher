@@ -21,7 +21,7 @@ chrome.commands.onCommand.addListener(function(command) {
 		}
 		else if(implementationExtensions.indexOf(ext) >= 0)
 		{
-			var headerURL = replaceExtension(url, "h");
+			var headerURL = replaceExtension(url, headerExtension);
 			chrome.tabs.update(current.id, { url: headerURL });
 		}
 	});
