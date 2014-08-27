@@ -1,20 +1,25 @@
 {
-  "name": "GitHub Header Implementation Switcher",
+  "name": "Quick GitHub Header Switch",
+  "short_name": "Quick Header Switch",
   "version": "1.0",
-  "description": "Switch between Header and Implementation Files using a Keyboard Shortcut (defaults to the Xcode shortcut Ctrl+Cmd+Up)",
+  "description": "Switch between Header and Implementation Files using a Keyboard Shortcut.",
   "background": {
-    "persistent": false,
+    "persistent": true,
     "scripts": [ "main.js" ]
   },
   "permissions": [ "tabs", "https://github.com/" ],
   "commands": {
     "switch-to-other-file": {
       "suggested_key": {
-        "default": "Ctrl+Shift+Up",
-        "mac": "MacCtrl+Command+Up"
+        "default": "Ctrl+Shift+Up"
       },
       "description": "Switch to the other file"
     }
+  },
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
   },
   "manifest_version": 2
 }

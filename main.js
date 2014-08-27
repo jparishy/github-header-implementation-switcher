@@ -1,5 +1,7 @@
 chrome.commands.onCommand.addListener(function(command) {
 
+
+	console.log("help");
 	var headerExtension = "h";
 	var implementationExtensions = [ "m", "mm", "c", "cpp" ];
 
